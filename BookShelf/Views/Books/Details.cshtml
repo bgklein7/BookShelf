@@ -1,0 +1,63 @@
+﻿@model BookShelf.Models.Book
+
+@{
+    ViewBag.Title = "Details";
+}
+<link href="~/Content/StyleSheetBookDetails.css" rel="stylesheet" />
+<div class="mainBody">
+    <h2 id="details">Details</h2>
+
+    <div>
+        <h4 id="book">Book</h4>
+        <hr />
+        <div class="row row-odd">
+            <div class="col-sm-6 col-md-4">
+                @Html.DisplayNameFor(model => model.Category.Name)
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                @Html.DisplayFor(model => model.Category.Name)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                @Html.DisplayNameFor(model => model.Title)
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                @Html.DisplayFor(model => model.Title)
+            </div>
+        </div>
+        <div class="row row-odd">
+            <div class="col-sm-6 col-md-4">
+                @Html.DisplayNameFor(model => model.PublishedDate)
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                @Html.DisplayFor(model => model.PublishedDate)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                @Html.DisplayNameFor(model => model.Description)
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                @Html.DisplayFor(model => model.Description)
+            </div>
+        </div>
+        <div class="row row-odd">
+            <div class="col-sm-6 col-md-4">
+                @Html.DisplayNameFor(model => model.ISBN)
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                @Html.DisplayFor(model => model.ISBN)
+            </div>
+        </div>
+    </div>
+    <p class="links">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.BookID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>

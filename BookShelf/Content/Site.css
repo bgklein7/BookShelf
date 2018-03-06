@@ -1,0 +1,76 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url('ImageRepository/4884543-books-wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.row {
+    background-color: darkolivegreen;
+}
+
+.row-odd {
+    background-color: lightgray;
+}
+
+
+h2 {
+    color: white;
+    font-weight: bolder;
+}
+
+#book {
+    color: white;
+    font-weight: bolder;
+}
+a {
+    color: white;
+    font-weight: bolder;
+}
+a:hover{
+    color:firebrick;
+    text-decoration: wavy;
+}
+.thumbnail {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 18px;
+    background-image: url('ImageRepository/openbook.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.control-label.col-md-2{
+    border: 1px dashed black;
+    background-color: darkolivegreen;
+    color: white;
+    padding: 3px;
+    text-align: center;
+}
+.text-box{
+    background-color: lightgrey;
+}
+button{
+    background-color: orange;
+    border: 1px solid purple;
+}
